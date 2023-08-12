@@ -3,19 +3,27 @@
     padding: 0;
     box-sizing: border-box;
    }
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+  }
 
 body{
-    background: #22212C;
+    
+    background: var(--body-bg-color);
     font-family: 'Merriweather Sans', sans-serif;
-    color: #837E9F;
+    color: var(--text-color)
 }
 .profile{
     width: 348px;
     height: 292px;
     border-radius: 20px;
-    background: #302F3D;
+    background: var(--bg-cards);
     text-align: center;
     margin: 40px 60px 30px 40px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
 }
 
 .profile img{
@@ -37,10 +45,11 @@ body{
 .social-links{
     width: 348px;
     height: 348px;
-    background: #302F3D;
+    background: var(--bg-cards);
     border-radius: 20px;
     margin: 0px 60px 30px 40px;
     padding: 30px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
 }
 .social-links img{
     width: 24px;
@@ -58,8 +67,87 @@ body{
     top: 3px;
 }
 .social-links a{
+    color: var(--text-color);
     text-decoration: none;
+
 }
 .social-links div {
     position: relative;
+}
+
+.techs-card{
+    width: 348px;
+    border-radius: 20px;
+    height: 208px;
+    background: var(--bg-cards);
+    margin: 0px 60px 30px 40px;
+    padding: 30px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    
+}
+.techs-card h2{
+    font-size: 20px;
+    font-weight: 700;
+    width: 121px;
+    height: 26px;
+    position: relative;
+    
+}
+
+.techs {
+    display: inline-block;
+    width: 86px;
+    height: 24px;
+    border-radius: 30px;
+    background: var(--bg-techs);  
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 5PX ;
+}
+.techs p{
+    position: relative;
+    top: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #000;
+    width: 86px;
+    height: 11px;
+}
+.card {
+    width: 348px;
+    height: 100%;
+    background: var(--bg-cards);
+    border-radius: 20px;
+    margin: 0px 60px 30px 40px;
+    padding: 30px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+}
+.card h2{
+    font-size: 20px;
+    font-weight: 700;
+    width: 121px;
+    height: 26px;
+    position: relative;
+}
+.card ul{
+    list-style-position: inside;
+    margin-top: 10px;
+    line-height: 26px;
+}
+.card dd{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    position: relative;
+    left: 22px;
+    margin: 2px;
+}
+.card p{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    left: 22px;
 }
