@@ -13,10 +13,12 @@
 body{
     background: var(--body-bg-color);
     font-family: 'Merriweather Sans', sans-serif;
-    color: var(--text-color)
+    color: var(--text-color);
+    display: flex;
+    
 }
 .profile{
-    display: block;
+    
     width: 348px;
     height: 292px;
     border-radius: 20px;
@@ -46,9 +48,9 @@ body{
 
 }
 .social-links{
-    display: block;
+    
     width: 348px;
-    height: 100%;
+    
     background: var(--bg-cards);
     border-radius: 20px;
     margin: 0px 60px 30px 40px;
@@ -80,10 +82,10 @@ body{
 }
 
 .techs-card{
-    display: block;
+    
     width: 348px;
     border-radius: 20px;
-    height: 100%;
+    
     background: var(--bg-cards);
     margin: 0px 60px 30px 40px;
     padding: 30px;
@@ -121,7 +123,7 @@ body{
 .card {
     display: block;
     width: 348px;
-    height: 100%;
+    
     background: var(--bg-cards);
     border-radius: 20px;
     margin: 0px 60px 30px 40px;
@@ -158,35 +160,36 @@ body{
     left: 22px;
 }
 
-.content-main{
-    position: absolute;
-    top: 40px;
-    left: 600px;
-    height: 100%;
+.content{
+    margin-left: 10%;
+    width: fit-content;
+    height: fit-content;
     
+}
+.side-info{
+    
+    width: fit-content;
+    height: fit-content;
 }
 
 .project-tittle{
-    width: 952px;
+    width: 990px;
     height: 86px;
-    grid-column-start: 3;
+    margin: 40px 0px;
     background: var(--bg-cards);
     padding: 30px;
     border-radius: 20px;
+
 }
-.projects{
-    width: 100%;
-    height: 100%;
-    margin-top:30px ;
-    
-}
+
 .project-card{
     display: inline-block;
+    margin: 10px;
     padding: 30px;
     background: var(--bg-cards);
     border-radius: 20px;
     width: 461px;
-    height: 186px;
+    height: 100%;
 }
 .project-card img{
     width: 20px;
@@ -200,4 +203,28 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+.project-card .title{
+    display: flex;
+    gap: 16px;
+    
+    width: fit-content;
+}
+.project-card p{
+    margin: 16px 0px;
+}
+.circle{
+    background: yellow ;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    transform: translateY(15%);
+   
+}
+.project-card .title .lang{
+    display: flex;
+    margin-left: 50%;
+    gap: 16px;
+    width: fit-content;
+    
 }
